@@ -7,12 +7,18 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import rtigis.model.Hello;
 
 @Configuration
 @PropertySource(value = {"classpath:util.properties"})
 public class AppConfig {
     @Autowired
     Environment environment;
+
+    @Bean
+    public Hello hello() {
+        return new Hello("Hello My First Bean");
+    }
 
     @Bean
     public DriverManagerDataSource dataSource(){

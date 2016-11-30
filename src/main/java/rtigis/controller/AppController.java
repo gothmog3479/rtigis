@@ -16,7 +16,7 @@ public class AppController {
     @Autowired
     By by;
 
-    @RequestMapping("/")
+    @RequestMapping("/rtigis")
     public String hello(Model model){
         model.addAttribute("hello", hello.getHelloMessage());
         model.addAttribute("by", by.getByMessage());
