@@ -9,6 +9,7 @@
     <url>http://maven.apache.org</url>
     <properties>
         <java-version>1.8</java-version>
+        <spring.version>4.3.3.RELEASE</spring.version>
         <org.slf4j-version>1.6.1</org.slf4j-version>
         <jackson-version>2.4.4</jackson-version>
         <postgres.driver.version>9.4.1212</postgres.driver.version>
@@ -27,6 +28,27 @@
         </repository>
     </repositories>
     <dependencies>
+        <!-- Spring framework -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
         <!-- DataBases -->
         <dependency>
             <groupId>org.postgresql</groupId>
