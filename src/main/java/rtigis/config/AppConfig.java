@@ -17,7 +17,7 @@ public class AppConfig {
 
     @Bean
     public Hello hello() {
-        return new Hello("Hello My First Bean");
+        return new Hello("Hello My First Bean!!!");
     }
 
     @Bean
