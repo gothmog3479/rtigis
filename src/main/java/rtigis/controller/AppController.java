@@ -20,6 +20,6 @@ public class AppController {
     public String hello(Model model){
         model.addAttribute("hello", hello.getHelloMessage());
         model.addAttribute("by", by.getByMessage());
-        return "hello";
+        return "index";
     }
 }
