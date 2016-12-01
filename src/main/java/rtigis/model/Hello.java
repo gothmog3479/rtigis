@@ -1,8 +1,5 @@
 package rtigis.model;
 
-import org.springframework.stereotype.Component;
-
-
 public class Hello {
     public Hello(String helloMessage) {
         this.helloMessage = helloMessage;
